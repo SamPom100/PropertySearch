@@ -34,16 +34,17 @@ def propertySearch(houseNumber, streetName, city, zipCode, unitNum):
         browser.find_element(By.ID, "ContentPlaceHolder1_ASPxPanel2_SearchByAddress1_txtUnit").send_keys(unitNum)
 
     #CONTINUE
+    time.sleep(2)
     continueButton = browser.find_element(By.ID, "ContentPlaceHolder1_ASPxPanel2_SearchByAddress1_cmdContinue")
-    time.sleep(0.5)
     continueButton.click()
 
     #VIEW PROPERTY TAX
+    time.sleep(2)
     viewPropertyTaxButton = browser.find_element(By.ID, "ContentPlaceHolder1_ASPxPanel2_SearchByAddress1_ListView1_lnkShowAddressSearchResults_0")
-    time.sleep(0.5)
     viewPropertyTaxButton.click()
 
     #GET TOTAL BILLED
+    time.sleep(2)
     billedSpan = browser.find_element(By.ID, "ContentPlaceHolder1_OverviewDataResultsSummary1_PaymentsOverviewSummaryControl1_lblPriorTotalAmountBilled")
     print("TOTAL TAX BILLED IN 2021: ", billedSpan.text, "\n\n")
 

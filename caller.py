@@ -2,10 +2,10 @@ from cook import *
 from lien import *
 
 #ENTER ADDRESS
-houseNumber = "8259"
-streetName = "S INGLESIDE AVE"
-city = "Chicago"
-zipCode = "60619"
+houseNumber = "1049"
+streetName = "Pontiac Rd"
+city = "Wilmette"
+zipCode = "60091"
 unitNumber = ""
 
 propertySearch(houseNumber, streetName, city, zipCode, unitNumber)
